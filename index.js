@@ -132,7 +132,7 @@ Your function should accept:
 
 and should return a new array that is identical to the old array. You can name the new array however you'd like. */
 
-function copy(/*code here*/){
+function copy(arr, newarr){
 
     /*code here*/
 
