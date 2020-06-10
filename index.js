@@ -67,6 +67,7 @@ function addFlavor(newFlavors){
 
 addFlavor("Rainbow Sherbert", originalFlavors);
 console.log(originalFlavors);
+
 /* Task 3: Houston, we have a problem! There are now 32 flavors in the array! Your task is to remove an item from the end of the array. 
 
 Your function should accept:
@@ -77,11 +78,12 @@ Your function should remove a flavor from the end of the array and console.log t
 
 For example removeLastFlavor(originalFlavors) would return ["Rainbow Sherbert", "Banana Nut Fudge",..."Vanilla"]*/ 
 
-function removeLastFlavor(/*code here*/){
-
-    /*code here*/
-
+function removeLastFlavor(removeFlavors){
+    originalFlavors.pop(removeFlavors)
 }
+
+removeLastFlavor();
+console.log(originalFlavors);
 
 /* Task 4: Write a function that returns a flavor at a given index in the array.
 
