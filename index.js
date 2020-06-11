@@ -84,7 +84,7 @@ function removeLastFlavor(arr){
     console.log(arr);
 }
 
-/*removeLastFlavor(originalFlavors);
+removeLastFlavor(originalFlavors);
 
 /* Task 4: Write a function that returns a flavor at a given index in the array.
 
@@ -99,7 +99,7 @@ function getFlavorByIndex(arr, index){
     console.log(arr[index]);
 }
 
-/*getFlavorByIndex(originalFlavors, 2);
+getFlavorByIndex(originalFlavors, 2);
 
 /* Task 5: As corporate wants to add more and more flavors to their lineup, they've realized that they need to remove flavors based on flavor name, as opposed to just arbitrarily removing the first or last flavor. Your task is to get an index by flavor name, and remove that flavor from the array. 
 
@@ -123,7 +123,7 @@ function removeFlavorByName(arr,flavor){
     console.log(arr);
 }
 
-/*removeFlavorByName(originalFlavors, "Vanilla");
+removeFlavorByName(originalFlavors, "Vanilla");
 
 /* Task 6: With all of these changes going on, we don't want to lose track of the actual, original 31 flavors. Write a function called copy that makes a copy of the array. 
 
@@ -164,7 +164,7 @@ function filterByWord(arr, string){
     }
 }
 
-filterByWord(originalFlavors, 'Lemon');
+filterByWord(originalFlavors, 'Chocolate');
 
 /* 🧁🍦🍨 STRETCH 🍨🍦🍫*/ 
 
@@ -178,12 +178,24 @@ and should return the average number of words per item in the array.
 
 For example, getAverageWordLength(originalFlavors) should return a number between 0 and 3. */
 
-function getAverageWordLength(arr){
+/*function getAverageWordLength(arr){
 
+    let numbersOfWords = 0;
+    let totalAddedNumbers = 0;
+    let wordsAverage = totalAddedNumbers / arr.length;
 
+    for(let i = 0; i < arr.length; i++){
+        if(arr[i] === ' '){
+            numbersOfWords += 1; 
+        }
+        numbersOfWords += 1;
+        return numbersOfWords;
+    }
+    console.log(wordsAverage);
 }
 
 getAverageWordLength(originalFlavors);
+
 /* STRETCH 2: Baskin Robins now offers new flavors, seasonal flavors, and even regional flavors. Write a function that will randomly select a total of 31 flavors from originalFlavors, currentFlavors, seasonalFlavors, and regionalFlavors.
 
 Your function should accept 4 different arrays,
@@ -265,8 +277,14 @@ var regionalFlavors = ["Pink Bubblegum",
     "Chocolate Chocolate Chip Cheesecake",
     "Caramel 'n' Cookies"]
 
-function getRandomFlavors(/*code here*/){
+    function getRandomFlavors(arr1){
 
-    /*code here*/
+        var randomFlavors = _.sample(arr1);
+    }
+        /*for (let i = 0; i < arr1.length; i++){
+            randomFlavors = arr1[Math.floor(Math.random())] * arr1.length;
+        }
+           console.log(randomFlavors);
+        }*/
 
-}
+        getRandomFlavors(newFlavors);
